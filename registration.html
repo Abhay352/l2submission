@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WD201</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        input#email:invalid:focus,
+        input#password:invalid:focus,
+        input#name:invalid:focus {
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="form-div">
+        <h2>WAD101 Final</h2>
+        <form align="center" id="form" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" minlength="8" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of birth</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">Accept Terms & Conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
